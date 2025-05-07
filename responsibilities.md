@@ -29,9 +29,9 @@ Review the following sections for the specific responsibilities for you and for 
 |Availability| {{site.data.keyword.cis_full_notm}} provides high availability through multi-zone region deployment and automatic failover between different regions in case of a region-wide failure. | |
 |Monitoring and ongoing operation of production environments| {{site.data.keyword.cis_full_notm}} provides continuous around the clock operational monitoring and coverage by on-call personnel with minimal response times. | |
 |Deployments and cluster management| New features, updates, and bug fixes are continuously delivered as needed in a manner transparent to the customer. Maintenance with client impact is scheduled in advance with notifications posted to the {{site.data.keyword.cloud}} status page. | Set preferences to receive email notifications. Monitor the {{site.data.keyword.cloud}} status page for general announcements. |
-|Incident management| Unplanned incidents with customer impact are communicated using the CIE process. | Impacted customers can obtain a report about the incident upon request. |
+|Incident management| Unplanned incidents with customer impact are communicated using the CIE process. | Impacted customers can obtain a report about the incident upon request. |<staging>
+|Logging | Logs system-level security events and patch activities. | Enables and manages domain-level logging (for example, request, error, and firewall logs) using [Logpush](/docs/cis?topic=cis-logpush&interface=ui). |</staging>
 {: caption="Responsibilities for incident and operations" caption-side="bottom"}
-
 
 ## Change management
 {: #change-management}
@@ -48,7 +48,8 @@ Review the following sections for the specific responsibilities for you and for 
 | Task | {{site.data.keyword.IBM_notm}} Responsibilities | Your responsibilities |
 |----------|-----------------------|--------|
 |Service and platform permissions| {{site.data.keyword.cis_full_notm}} provides administrators a way to control access to work with an instance, domain, or subcategory. | Grant, revoke, and manage access to service instances, domains, and subcategories by using IAM, the {{site.data.keyword.cis_full_notm}} Access page, or the equivalent CLI. |
-|Security monitoring| {{site.data.keyword.cis_full_notm}} performs regular code scans and other measures to ensure ongoing security of the service.| |
+|Security monitoring| {{site.data.keyword.cis_full_notm}} performs regular code scans and other measures to ensure ongoing security of the service.| |<staging>
+|Logging| Logs access control actions within the CIS platform and IAM system. | Monitors access changes to their CIS resources using IBM Cloud Activity Tracker Routing or other audit solutions. |</staging>
 {: caption="Responsibilities for identity and access management" caption-side="bottom"}
 
 ## Security and regulation compliance
@@ -58,7 +59,8 @@ Review the following sections for the specific responsibilities for you and for 
 |----------|-----------------------|--------|
 |Maintenance of controls| {{site.data.keyword.cis_full_notm}} maintains controls pertaining to industry standards for which it is certified.  | Customer responsibility description |
 |Security and vulnerability updates| {{site.data.keyword.cis_full_notm}} applies security and vulnerability patches on a regular and timely schedule that is transparent to the user. | |
-|Security of instance and domain configuration| | Customer is responsible for setting up and maintaining the security and compliance of their domain within {{site.data.keyword.cis_full}} |
+|Security of instance and domain configuration| | Customer is responsible for setting up and maintaining the security and compliance of their domain within {{site.data.keyword.cis_full}} |<staging>
+|Logging | Logs patch management and platform security operations to maintain compliance. | Configures and consumes security event logs (for example, WAF, DDoS) using Logpush for their domains. |</staging>
 {: caption="Responsibilities for security and regulation compliance" caption-side="bottom"}
 
 ## Disaster recovery
